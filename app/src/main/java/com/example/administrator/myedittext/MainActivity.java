@@ -77,10 +77,10 @@ public class MainActivity extends AppCompatActivity {
         faceBtn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bitmap bitmap2 = BitmapFactory.decodeResource(getResources(),R.mipmap.face2);
+                Bitmap bitmap2 = BitmapFactory.decodeResource(getResources(),R.drawable.face2);
                 ImageSpan imageSpan2 = new ImageSpan(MainActivity.this,bitmap2);
                 SpannableString spannableString2 = new SpannableString("face2");
-                spannableString2.setSpan(imageSpan2, 0, 5, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+                spannableString2.setSpan(bitmap2, 0, 5, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
                 editText5.append(spannableString2);
             }
         });
